@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="204dp"
+        android:layout_height="145dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="86dp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnCadastro"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCadastroClick"
+        android:text="Cadastrar" />
+
+    <Button
+        android:id="@+id/btnListar"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCadastro"
+        android:layout_centerHorizontal="true"
+        android:text="Listar Mutantes"
+        android:onClick="onListarClick"
+        />
+
+    <Button
+        android:id="@+id/btnPesquisar"
+        android:layout_width="204dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/btnListar"
+        android:layout_centerHorizontal="true"
+        android:text="Pesquisar"
+        android:onClick="onPesquisarClick"/>
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPesquisar"
+        android:layout_centerHorizontal="true"
+        android:text="Sair"
+        android:onClick="onSair"/>
+</RelativeLayout>
