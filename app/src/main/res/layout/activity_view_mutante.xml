@@ -41,6 +41,7 @@
         android:inputType="text|textMultiLine"
         android:layout_below="@+id/lblHab"
         android:layout_centerHorizontal="true"
+        android:gravity="top"
         android:ems="10"
         android:text="" />
 
@@ -50,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="161dp"
+        android:layout_marginBottom="70dp"
         android:background="@color/verde"
         android:onClick="onSalvar"
         android:text="Salvar" />
@@ -60,7 +61,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="106dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/vermelho"
         android:onClick="onDeletar"
         android:text="Deletar" />

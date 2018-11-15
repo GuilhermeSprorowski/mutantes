@@ -58,12 +58,13 @@ public class PesquisaActivity extends AppCompatActivity implements TextWatcher {
 
     @Override
     public void onTextChanged(CharSequence s, int start, int before, int count) {
-        String searchText = txtSearch.getText().toString().trim();
+        String searchText = txtSearch.getText().toString().trim().toLowerCase();
         if( searchText!= null && !searchText.isEmpty()){
             ArrayList<Mutante> mutantesFound = new ArrayList<>();
             for (Mutante mutante: mutantes){
-                if(mutante.getSkills().toLowerCase().contains(searchText.toLowerCase())){
+                if(mutante.getSkills().toLowerCase().contains(searchText) || mutante.getName().toLowerCase().contains(searchText)){
                     mutantesFound.add(mutante);
+                    findViewById(R.id.txtNotFound).setVisibility(View.INVISIBLE);
                 }
             }
             ArrayAdapter foundAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, mutantesFound);

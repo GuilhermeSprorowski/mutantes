@@ -23,7 +23,7 @@
             android:textColor="#000"
             android:id="@+id/txtSearch"
             android:background="@null"
-            android:hint="Digite a Habilidade do mutante"
+            android:hint="Digite o nome ou habilidade do mutante"
             android:imeOptions="actionSearch"/>
         <ImageView
             android:layout_width="50dp"
